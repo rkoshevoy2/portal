@@ -34,3 +34,33 @@ body {
   position: relative;
   box-sizing: border-box;
 }
+/* map */
+.map {
+  position: relative;
+  height: 500px;
+}
+.map-link {
+  display: block;
+  position: absolute;
+  z-index: 22;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  background: white;
+}
+.map-link__popover {
+  display: none;
+}
+.map-link__item {
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+  margin-right: 10px;
+  margin-right: 0;
+}
+#google-map {
+  display: block;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
