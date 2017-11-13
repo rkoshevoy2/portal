@@ -71,8 +71,7 @@ gulp.task("watch", function() {
     browserSync.init({
         server: ".",
 		notify: false,
-		open: true,
-		tunnel: "ruslankoshevoy"
+		open: true
     });
 
   gulp.watch("less/**/*.{css,less}", ["style"]);
