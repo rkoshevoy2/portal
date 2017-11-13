@@ -1,0 +1,171 @@
+	/* page-footer */
+
+
+	.page-footer {
+		display: none;
+		z-index: 5;
+
+		@media @tablet-widths {
+			display: inline-block;
+			position:relative;
+			width:100%;
+			min-height: 125px;
+			bottom:0;
+			background:white;
+			z-index: 5;
+		}
+
+		@media @desktop-widths{
+			min-height: 200px;
+			z-index: 5;
+		}
+	}
+
+	.footer-wrap {
+		.container();
+		min-height:128px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media @mobile-widths{
+			padding-top: 40px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media @desktop-widths{
+			min-height: 200px;
+		}
+	}
+
+	.footer__logo {
+		.logotype__desktop {
+				display: none;
+			}
+			
+		@media @tablet-widths {
+			.logotype__desktop {
+				display: none;
+			}
+			.logotype__tablet{
+				display: inline-block;
+			}
+		}
+
+		@media @desktop-widths{
+			.logotype__tablet {
+				display: none;
+			}
+			.logotype__desktop {
+				display: inline-block;
+			}
+		}
+
+		.logotype{
+			fill:#283645;
+		}
+		&:hover .logotype{
+			fill:@red;
+		}
+		&:active .logotype{
+			opacity:0.3;
+		}
+
+	}
+
+	.footer-social {
+		@media @mobile-widths{
+			margin: 40px 0;
+		}
+	}
+
+
+	.social__btn {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		width: 60px;
+		height: 60px;
+		margin-right: 15px;
+
+		img {
+			position:relative;
+			max-width:100%;
+			top:35%;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width:60px;
+			height:60px;
+			background: white;
+			opacity: 0.1;
+			border-radius: 50%;
+			border:3px solid @blue-medium;	
+		}
+		
+		&:hover:before{
+			opacity:1;
+		}
+
+		&:active{
+			opacity:0.3;
+		}
+	}
+
+
+
+	.footer-copyright p{
+		display: inline-block;
+
+		font-size: @font-size-base;
+		color:@blue-medium;
+
+		@media @desktop-widths{
+			font-size:@font-size-small_desktop;
+
+
+		}
+
+	}
+
+	.footer-copyright a{
+		display: inline-block;
+		width:27px;
+		height:34px;
+		margin-left: 15px;
+		vertical-align: middle;
+
+		background:url(../img/icon-htmlacademy.png) no-repeat 0 50%;
+		background-size:auto;
+
+		&:hover{
+
+			background:url(../img/icon-htmlacademy-hvr.png) no-repeat 0 50%;
+			
+		}
+
+		&:active{
+			background:url(../img/icon-htmlacademy-down.png) no-repeat 0 50%;
+			
+		}
+	}
+
+	.page-footer-vision{
+		display: block;
+	}
+	
+
+
+
+	
+
+	
+
+
+	
