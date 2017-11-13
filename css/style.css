@@ -12,12 +12,32 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSansSemibold;
+  src: url("../fonts/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
 }
 img {
   max-width: 100%;
@@ -28,9 +48,264 @@ body {
   min-width: 260px;
   max-width: 1920px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 14px;
   font-family: OpenSansLight;
   color: #6d6e71;
   position: relative;
   box-sizing: border-box;
+}
+input,
+button {
+  outline: none;
+}
+h1 {
+  font-size: 58px;
+  font-family: OpenSansBold;
+  text-transform: uppercase;
+}
+.main-header-top {
+  background-color: #eceef4;
+}
+.main-header-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.main-header-nav {
+  padding: 15px 0;
+}
+.main-header-nav__list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+.main-header-nav__item {
+  width: 100px;
+  margin-right: 5px;
+}
+.main-header-nav__item:last-child {
+  margin-right: 0;
+}
+.main-header-nav__link {
+  display: block;
+  padding: 7px 10px;
+  padding-left: 35px;
+  border-radius: 3px;
+  background-color: #fff;
+  text-decoration: none;
+  font-family: OpenSansBold;
+  font-size: 12px;
+  color: #6d6e71;
+  transition: 0.3s;
+}
+.main-header-nav__link:hover {
+  background-color: #f7f7f7;
+}
+.main-header-social__list {
+  display: flex;
+  list-style: none;
+}
+.main-header-social__item {
+  width: 66px;
+  height: 63px;
+}
+.main-header-social__item:first-child .main-header-social__link {
+  border-left: 1px solid #dee0e6;
+}
+.main-header-social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #dee0e6;
+  transition: 0.3s;
+}
+.main-header-social__link:hover {
+  background-color: #f7f7f7;
+}
+.main-header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.main-header-logo {
+  width: 405px;
+  height: 95px;
+  margin-left: -17px;
+  background-image: url('../images/logo.png');
+  background-position: left center;
+}
+.main-header-contacts {
+  width: 240px;
+  text-align: center;
+}
+.main-header-contacts__address-tooltip {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #d4d4d5;
+  border-radius: 5px;
+}
+.main-header-contacts__items {
+  display: flex;
+}
+.main-header-contacts__item {
+  position: relative;
+  width: 33.33%;
+  height: 45px;
+}
+.main-header-contacts__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 24px;
+  background-color: #bcbec3;
+  transform: translatey(-50%);
+}
+.main-header-contacts__item:last-child::after {
+  display: none;
+}
+.main-header-bottom {
+  border-top: 1px solid #eceef4;
+}
+.main-header-bottom__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.main-header-anchors__list {
+  display: flex;
+  list-style: none;
+}
+.main-header-anchors__item:last-child .main-header-anchors__link {
+  border-right: none;
+}
+.main-header-anchors__item--active .main-header-anchors__link {
+  color: #1faae2;
+}
+.main-header-anchors__link {
+  display: block;
+  padding: 35px 20px;
+  border-right: 1px solid #eceef4;
+  text-decoration: none;
+  color: #6d6e71;
+  font-family: OpenSansBold;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.main-header-anchors__link:hover {
+  background-color: #f7f7f7;
+}
+.main-header-search-form__input {
+  padding: 34px 20px;
+  padding-left: 40px;
+  border: none;
+  font-size: 15px;
+  font-family: OpenSansLight;
+}
+.main-header-search-form__input:-ms-input-placeholder {
+  font-size: 15px;
+  font-family: OpenSansLight;
+}
+.main-header-search-form__input::placeholder {
+  font-size: 15px;
+  font-family: OpenSansLight;
+}
+.home {
+  padding-top: 250px;
+  padding-bottom: 125px;
+  background-image: url('../images/home-background.jpg');
+  background-position: top center;
+  color: #fff;
+}
+.home__wrapper {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.home__headers {
+  margin-left: 200px;
+  margin-bottom: 135px;
+}
+.home__header {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.home__header::before {
+  content: '&';
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 7px;
+  color: #bbedff;
+  font-size: 120px;
+  text-shadow: none;
+}
+.home__underheader {
+  padding-left: 110px;
+  font-size: 45px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.home-slider {
+  display: flex;
+  justify-content: flex-end;
+}
+.home-slider__wrapper {
+  display: flex;
+  height: 240px;
+}
+.home-slider__arrow {
+  width: 110px;
+  height: 241px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home-slider__arrow:hover {
+  background-color: #dadada;
+}
+.home-slide {
+  position: relative;
+}
+.home-slide__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home-slide__bottom--green {
+  background-color: rgba(138, 202, 81, 0.8);
+}
+.home-slide__bottom--green:hover {
+  background-color: #8aca51;
+}
+.home-slide__bottom--lightgreen {
+  background-color: rgba(254, 235, 117, 0.8);
+  color: #cc9800;
+}
+.home-slide__bottom--lightgreen:hover {
+  background-color: #feeb75;
+}
+.home-slide__text {
+  padding-left: 45px;
+  font-family: OpenSansSemibold;
+  font-size: 14px;
 }

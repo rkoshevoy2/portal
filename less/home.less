@@ -1,0 +1,102 @@
+.home {
+  padding-top: 250px;
+  padding-bottom: 125px;
+  background-image: url('../images/home-background.jpg');
+  background-position: top center;
+  color: @white;
+
+  &__wrapper {
+    .container;
+  }
+
+  &__headers {
+    margin-left: 200px;
+    margin-bottom: 135px;
+  }
+
+  &__header {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    &::before {
+      content: '&';
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 7px;
+      color: #bbedff;
+      font-size: 120px;
+      text-shadow: none;
+    }
+  }
+
+  &__underheader {
+    padding-left: 110px;
+    font-size: 45px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.home-slider {
+  display: flex;
+  justify-content: flex-end;
+
+  &__wrapper {
+    display: flex;
+    height: 240px;
+  }
+
+  &__arrow {
+    width: 110px;
+    height: 241px;
+    background-color: @background-gray;
+    cursor: pointer;
+    .transition;
+
+    &:hover {
+      background-color: @background-gray-hover;
+    }
+  }
+}
+
+.home-slide {
+  position: relative;
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    .transition;
+  }
+
+  &__bottom--green {
+    background-color: rgba(138, 202, 81, 0.8);
+
+    &:hover {
+      background-color: #8aca51;
+    }
+  }
+
+  &__bottom--lightgreen {
+    background-color: rgba(254, 235, 117, 0.8);
+    color: #cc9800;
+
+    &:hover {
+      background-color: #feeb75;
+    }
+  }
+
+  &__text {
+    padding-left: 45px;
+    font-family: OpenSansSemibold;
+    font-size: 14px;
+  }
+}
