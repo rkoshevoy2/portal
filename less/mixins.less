@@ -1,15 +1,19 @@
 .container {
-	width: 1200px;
-	padding: 0 20px;
-    margin: 0 auto;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 
-	 @media @tablet-width {
-        width: 760px;
-	 }
+  @media @desktop-width {
+    width: 990px;
+  }
 
-	 @media @mobile-width {
-	 	width:100%;
-	 }
+  @media @tablet-width {
+    width: 760px;
+  }
+
+  @media @mobile-width {
+    width: 100%;
+  }
 }
 
 .transition (@time: 0.3s) {
@@ -21,5 +25,5 @@
 }
 
 .text-shadow {
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);	
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
