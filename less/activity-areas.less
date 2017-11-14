@@ -1,5 +1,81 @@
 .activity-areas {
+  padding-top: 60px;
+
   &__wrapper {
     .container;
+  }
+}
+
+.activity-areas-head {
+  width: 580px;
+  margin: 0 auto 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 165px;
+  background-image: url('../images/what-we-do.png');
+  background-position: left center;
+}
+
+.areas-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.area {
+  display: flex;
+  width: 510px;
+  margin-bottom: 90px;
+
+  &__image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    background-position: center;
+  }
+
+  &:first-child {
+    .area__image {
+      background-image: url('../images/wwd-1.png');
+    }
+  }
+
+  &:nth-child(2) {
+    .area__image {
+      background-image: url('../images/wwd-2.png');
+    }
+  }
+
+  &:nth-child(3) {
+    .area__image {
+      background-image: url('../images/wwd-3.png');
+    }
+  }
+
+  &:nth-child(4) {
+    .area__image {
+      background-image: url('../images/wwd-4.png');
+    }
+  }
+
+  &:nth-child(5) {
+    .area__image {
+      background-image: url('../images/wwd-5.png');
+    }
+  }
+
+  &:nth-child(6) {
+    .area__image {
+      background-image: url('../images/wwd-6.png');
+    }
+  }
+
+  &__header {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    text-align: justify;
   }
 }
