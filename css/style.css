@@ -772,75 +772,65 @@ h3 {
 }
 @media (max-width: 991px) {
   .container {
-    width: 100%;
+    width: 760px;
   }
   .main-header-top__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .main-header-middle {
-    width: 100%;
+    width: 760px;
   }
   .main-header-bottom__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .home__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .about__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .activity-areas__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .projects__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .team__wrapper {
-    width: 100%;
+    width: 760px;
   }
   .footer__wrapper {
-    width: 100%;
+    width: 760px;
   }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
-    max-width: 0px;
   }
   .main-header-top__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .main-header-middle {
     width: 100%;
-    max-width: 0px;
   }
   .main-header-bottom__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .home__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .about__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .activity-areas__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .projects__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .team__wrapper {
     width: 100%;
-    max-width: 0px;
   }
   .footer__wrapper {
     width: 100%;
-    max-width: 0px;
   }
 }
