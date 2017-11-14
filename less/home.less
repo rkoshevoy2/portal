@@ -1,5 +1,5 @@
 .home {
-  padding-top: 250px;
+  padding-top: 245px;
   padding-bottom: 125px;
   background-image: url('../images/home-background.jpg');
   background-position: top center;
@@ -17,7 +17,7 @@
   &__header {
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    .text-shadow;
 
     &::before {
       content: '&';
@@ -25,7 +25,7 @@
       z-index: -1;
       top: 0px;
       left: 7px;
-      color: #bbedff;
+      color: @text-light-blue;
       font-size: 120px;
       text-shadow: none;
     }
@@ -34,7 +34,7 @@
   &__underheader {
     padding-left: 110px;
     font-size: 45px;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    .text-shadow;
   }
 }
 
@@ -71,26 +71,26 @@
     bottom: 0;
     width: 100%;
     height: 65px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: @background-black-transparent;
     text-align: center;
     cursor: pointer;
     .transition;
   }
 
   &__bottom--green {
-    background-color: rgba(138, 202, 81, 0.8);
+    background-color: @background-green-transparent;
 
     &:hover {
-      background-color: #8aca51;
+      background-color: @background-green;
     }
   }
 
   &__bottom--lightgreen {
-    background-color: rgba(254, 235, 117, 0.8);
-    color: #cc9800;
+    background-color: @background-lightgreen-transparent;
+    color: @text-green;
 
     &:hover {
-      background-color: #feeb75;
+      background-color: @background-lightgreen;
     }
   }
 

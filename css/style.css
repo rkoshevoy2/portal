@@ -31,6 +31,9 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+.text-shadow {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 *,
 *:before,
 *:after {
@@ -62,6 +65,10 @@ h1 {
   font-size: 58px;
   font-family: OpenSansBold;
   text-transform: uppercase;
+}
+h3 {
+  font-size: 26px;
+  font-family: OpenSansBold;
 }
 .main-header-top {
   background-color: #eceef4;
@@ -222,7 +229,7 @@ h1 {
   font-family: OpenSansLight;
 }
 .home {
-  padding-top: 250px;
+  padding-top: 245px;
   padding-bottom: 125px;
   background-image: url('../images/home-background.jpg');
   background-position: top center;
@@ -309,7 +316,39 @@ h1 {
   font-family: OpenSansSemibold;
   font-size: 14px;
 }
-/* map */
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+  background-image: url('../images/divide.png');
+  background-position: bottom center;
+}
+.about-item {
+  width: 530px;
+  padding-top: 15px;
+  padding-left: 135px;
+}
+.about-item__header {
+  margin-bottom: 15px;
+}
+.about-item__text {
+  text-align: justify;
+  line-height: 24px;
+}
+.about-item--left {
+  background-image: url('../images/isama.png');
+}
+.about-item--right {
+  background-image: url('../images/why-we.png');
+}
+.activity-areas__wrapper {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 .map {
   position: relative;
   height: 500px;
