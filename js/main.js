@@ -4,13 +4,13 @@ function initMap() {
     zoom: 14,
      disableDefaultUI: true,
     zoomControl: true,
-    center: {lat: 59.93632276, lng: 30.32106467},
+    center: {lat: 21.491247, lng: 39.204708},
     scrollwheel: false
   });
 
-  var image = 'images/icons/icon-marker.svg';
+  var image = 'images/icon-marker.png';
   var beachMarker = new google.maps.Marker({
-    position: {lat: 59.93632276, lng: 30.32106467},
+    position: {lat: 21.491247, lng: 39.204708},
     map: map,
 
     icon: image
