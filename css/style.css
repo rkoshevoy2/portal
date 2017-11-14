@@ -530,18 +530,18 @@ h3 {
   left: 50%;
   transform: translate(-50%, -100%);
   z-index: 2;
-  padding: 10px 25px;
-  min-width: 220px;
-  border-radius: 10px;
+  padding: 15px 25px;
+  min-width: 228px;
+  border-radius: 5px;
   border-width: 1px;
-  border-color: #dbdbdb;
+  border-color: #dee0e6;
   border-style: solid;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.13);
   color: #6d6e71;
   font-size: 16px;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 23px;
 }
 .map-link__popover:before {
   content: '';
@@ -553,7 +553,7 @@ h3 {
   z-index: 0;
   width: 20px;
   height: 20px;
-  background: white;
+  background: #fff;
 }
 .map-link__item {
   display: inline-block;
@@ -563,14 +563,14 @@ h3 {
   height: 61px;
   border-radius: 10px;
   border-width: 1px;
-  border-color: #dbdbdb;
+  border-color: #dee0e6;
   border-style: solid;
   box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.13);
   background: white;
   margin-right: 10px;
 }
 .map-link__item--adress {
-  background: white url('../images/icons/icon-place.png') no-repeat center center;
+  background: #fff url('../images/icons/icon-place.png') no-repeat center center;
 }
 .map-link__item--adress:hover {
   background: #1ea5db url('../images/icons/icon-place-white.png') no-repeat center center;
@@ -579,7 +579,7 @@ h3 {
   display: block;
 }
 .map-link__item--mail {
-  background: white url('../images/icons/icon-mail.png') no-repeat center center;
+  background: #fff url('../images/icons/icon-mail.png') no-repeat center center;
 }
 .map-link__item--mail:hover {
   background: #1ea5db url('../images/icons/icon-mail-white.png') no-repeat center center;
@@ -588,7 +588,7 @@ h3 {
   display: block;
 }
 .map-link__item--phone {
-  background: white url('../images/icons/icon-phone.png') no-repeat center center;
+  background: #fff url('../images/icons/icon-phone.png') no-repeat center center;
 }
 .map-link__item--phone:hover {
   background: #1ea5db url('../images/icons/icon-phone-white.png') no-repeat center center;
@@ -598,4 +598,111 @@ h3 {
 }
 .map-link__item:last-child {
   margin-right: 0;
+}
+/* page-footer */
+.footer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  background-color: #2b2c2d;
+}
+.footer__wrapper {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 75px 18px 30px 18px;
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.footer-social__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 66px;
+  border-right: 1px solid #3c3e3f;
+}
+.footer-social__btn svg {
+  fill: #414344;
+}
+.footer-social__btn:hover svg {
+  fill: white;
+}
+.footer-newsletter {
+  min-width: 600px;
+  height: 66px;
+  padding: 10px 10px 10px 25px;
+  border-radius: 10px;
+  background-color: #393b3c;
+  vertical-align: middle;
+}
+.footer-newsletter__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-newsletter input {
+  min-width: 300px;
+  margin-left: 25px;
+  background-color: #393b3c;
+  border: none;
+  color: #6d6e71;
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.footer-newsletter button {
+  float: right;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #494c4d;
+  color: #6d6e71;
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer-copyright p {
+  display: inline-block;
+  color: #6d6e71;
+  font-size: 13px;
+}
+.footer-nav {
+  display: inline-block;
+  min-width: 40%;
+  text-align: right;
+}
+.footer-nav__item {
+  position: relative;
+  display: inline-block;
+  margin-left: 17px;
+}
+.footer-nav__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  width: 5px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #6d6e71;
+}
+.footer-nav__item:first-child:before {
+  display: none;
+}
+.footer-nav__item a {
+  color: #6d6e71;
+  font-size: 13px;
+  font-weight: 300;
+  text-decoration: none;
 }
