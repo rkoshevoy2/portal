@@ -476,9 +476,12 @@ h3 {
   width: 100px;
 }
 .project-tab {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.project-tab.active {
+  display: flex;
 }
 .project-item {
   width: 278px;
@@ -580,7 +583,7 @@ h3 {
   z-index: 1;
 }
 .map-link {
-  display: block;
+  display: flex;
   position: absolute;
   z-index: 22;
   left: 50%;
@@ -872,5 +875,28 @@ h3 {
   }
   .footer__wrapper {
     width: 100%;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__bottom {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .footer-newsletter input {
+    max-width: 175px;
+    min-width: auto;
+  }
+  .footer-newsletter button {
+    padding: 15px;
+  }
+  .footer-newsletter {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer-nav {
+    margin-bottom: 20px;
+    text-align: left;
   }
 }

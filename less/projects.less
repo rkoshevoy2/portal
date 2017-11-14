@@ -78,9 +78,13 @@
 }
 
 .project-tab {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.project-tab.active {
+  display: flex;
 }
 
 .project-item {

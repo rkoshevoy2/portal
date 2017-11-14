@@ -15,4 +15,15 @@ function initMap() {
 
     icon: image
   });
-}
+};
+
+
+$('.projects-tabs__item').click(function(){
+  var index = $(this).index();
+
+  $('.project-tab').removeClass('active');
+  $('.projects-tabs__item').removeClass('projects-tabs__item--active');
+
+  $('.project-tab').eq(index).addClass('active');
+  $(this).eq(index).addClass('projects-tabs__item--active');
+});

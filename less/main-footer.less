@@ -16,6 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media @mobile-width {
+      flex-wrap: wrap;
+    }
   }
 
   &__bottom {
@@ -23,6 +27,11 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 64px;
+
+    @media @mobile-width {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
   }
 }
 
@@ -74,6 +83,11 @@
       padding-right: 20px;
       text-overflow: ellipsis;
     }
+
+    @media @mobile-width {
+      max-width: 175px;
+      min-width: auto;
+    }
   }
 
   button {
@@ -85,10 +99,20 @@
     color: @text-gray;
     font-size: 14px;
     font-weight: 700;
+
+    @media @mobile-width {
+      padding: 15px;
+    }
   }
 
   @media @tablet-width {
     min-width: 300px;
+  }
+
+  @media @mobile-width {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -132,6 +156,10 @@
     }
   }
 
+  @media @mobile-width {
+    margin-bottom: 20px;
+    text-align: left;
+  }
 }
 
 
