@@ -801,6 +801,9 @@ h3 {
   .footer__wrapper {
     width: 760px;
   }
+  .footer-newsletter {
+    min-width: 300px;
+  }
 }
 @media (max-width: 767px) {
   .container {
