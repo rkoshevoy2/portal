@@ -1,14 +1,19 @@
-.projects-rounded-top {
-  width: 100%;
-  height: 50px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  background-color: @background-gray2;
-}
-
 .projects {
+  position: relative;
+  margin-top: 50px;
   padding-bottom: 85px;
   background-color: @background-gray2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: @background-gray2;
+  }
 
   &__wrapper {
     .container;

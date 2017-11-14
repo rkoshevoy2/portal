@@ -1,0 +1,67 @@
+.team {
+  padding-bottom: 100px;
+
+  &__wrapper {
+    .container;
+  }
+}
+
+.team-head {
+  width: 600px;
+  margin: 0 auto 80px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 165px;
+  background-image: url('../images/our-team.png');
+  background-position: left center;
+}
+
+.teammates-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teammate {
+  width: 278px;
+  padding-top: 43px;
+  background-color: @background-gray3;
+  text-align: center;
+
+  &__photo-wrapper {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: 24px;
+  }
+
+  &__position {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    background-color: @white;
+    margin-bottom: 27px;
+  }
+
+  &__social {
+    height: 100%;
+    width: 52px;
+    .transition;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @white-hover;
+    }
+  }
+}
