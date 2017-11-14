@@ -666,7 +666,6 @@ h3 {
 .map-link__item:last-child {
   margin-right: 0;
 }
-/* page-footer */
 .footer {
   display: inline-block;
   position: relative;
@@ -701,6 +700,7 @@ h3 {
 }
 .footer-social__btn svg {
   fill: #414344;
+  transition: 0.3s;
 }
 .footer-social__btn:hover svg {
   fill: white;
@@ -719,7 +719,8 @@ h3 {
 }
 .footer-newsletter input {
   min-width: 300px;
-  margin-left: 25px;
+  margin-left: 10px;
+  padding-left: 15px;
   background-color: #393b3c;
   border: none;
   color: #6d6e71;
@@ -727,6 +728,10 @@ h3 {
   line-height: 45px;
   font-weight: 700;
   letter-spacing: 0.4px;
+  transition: 0.3s;
+}
+.footer-newsletter input:focus {
+  background-color: #4d4d4d;
 }
 .footer-newsletter button {
   float: right;
